@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./MyProject2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .Main_container {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .Mid_container {
+            width: 90%;
+            height: auto;
+            
+            
+        }
+
+        #bell {
+            margin-left: 50px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 1px;
+            background-color: black;
+            color: white;
+        }
+
+        #navbar_logo {
+            height: 10vh;
+            width: 10vh;
+            border-radius: 50%;
+        }
+
+        .right_navbaar {
+            background-color: blue;
+            height: 20px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        input {
+            background: none;
+            outline: none;
+            border: none;
+        }
+
+        @media screen and (max-width:700px) {
+            input {
+                width: 50%;
+            }
+
+            #navbar_logo {
+                height: 5vh;
+                width: 5vh;
+                border-radius: 50%;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+
+            #bell {
+                margin-right: 30px;
+            }
+
+            input {
+                width: 30%;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .right_navbaar {
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            #navbar_logo {
+                height: 2vh;
+                width: 2vh;
+                border-radius: 50%;
+            }
+        }
+
+
+
+        /* .................start bottom container...................... */
+
+        .bottom_container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+             
+        }
+
+        .left_container {
+            width: 60%;
+            height: 100vh;
+            
+            margin-left: 15vh;
+            overflow: auto;
+        }
+
+        .left_container::-webkit-scrollbar{
+            width: 7px;
+        }
+        .left_container::-webkit-scrollbar-thumb{
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        .left_temp {
+            display: flex;
+        }
+
+        .right_container {
+            width: 30%;
+            height: 100vh;
+            
+            margin-right: 15vh;
+            margin-left: 20px;
+            overflow: auto;
+        }
+
+        .right_container::-webkit-scrollbar{
+            width: 7px;
+        }
+
+        .right_container::-webkit-scrollbar-thumb{
+            background-color: black;
+            border-radius: 5px;
+        }
+
+
+
+        /* ..............left container start............. */
+        .Parent_templet_image {
+            height: 40vh;
+            width: 40vh;
+        }
+
+        .Parent_templet_one{
+            display: flex; 
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+
+        .child_temp_one{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .button_temp{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* margin: 20px 0 0 20px; */
+            margin: 10px 0 0 5px;
+        }
+
+        .Parent_templet_two{
+            margin: 10px 0 0 10px;
+        }
+
+        /* ..............left container end............... */
+
+
+
+
+        /* ..............songs container start............................. */
+        .songs_templete{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+            background-color: black;
+            padding: 10px;
+            box-shadow: 4px 4px 4px white;
+            color: white;
+        }
+        .songs_templete_image{
+            height: 5vh;
+            width: 5vh;
+        }
+
+
+
+
+
+
+
+
+        .right_temp{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .right_temp_image{
+            height: 5vh;
+            width: 5vh;
+        }
+
+
+        /* ..................backword navbar........... */
+        .backword_navbaar{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            position: sticky;
+            top: -1px;
+        }
+        .backword_navbaar_image{
+        height: 5vh;
+        width: 5vh;
+       }
+
+       .range{
+        width: 40vh;
+       }
+
+       .backword_navbaar_mid_icon{
+        margin-left: 20vh;
+       }
+       /* ..................backword navbaar end........... */
+        #heartimg{
+            margin-right: 30px;
+        }
+        #song_name{
+            margin-left: 10px;
+            font-style: italic;
+        }
+        button{
+            padding: 2px 10px;
+            box-shadow: 1px 1px 4px 4px white;
+        }
+
+        /* @media screen and (max-width:1170px){
+            .lorem{
+                font-size: 10px;
+                
+             }
+             .Parent_templet_image{
+                height: 20vh;
+                width:  20vh;
+             }
+             .Parent_templet_one{
+                margin-right: 20px;
+             }
+        }
+          @media screen and (max-width:1000px){
+            .Parent_templet_image{
+                height: 15vh;
+                width:  15vh;
+             }
+          }
+
+          @media screen and (max-width:951px){
+            .Parent_templet_image{
+                height: 10vh;
+                width:  10vh;
+             }
+          }
+
+        
+
+        @media screen and (max-width:950px){
+            .right_container{
+                width: 50%;
+            }
+            .coding{
+                font-size: 10px;
+            }
+            .follower{
+                font-size: 10px;
+            }
+            button{
+                width: 60%;
+                height: 20%;
+            }
+        }
+
+        @media screen and (max-width:850px){
+            #btn{
+                font-size: 10px;
+            }
+            .follower{
+                font-size: 10px;
+            }
+        } */
+     
+
+        @media screen and (max-width:1150px) {
+            .Parent_templet_one{
+                width: 80%;
+                 
+            }
+            .Parent_templet_image{
+                height: 15vh;
+                width: 15vh;
+            }
+            
+            .songs_templete{
+                width: 80%;
+            }
+            .right_container{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:1100px){
+            .Parent_templet_one{
+                
+                font-size:10px;
+            }
+            button{
+                font-size: 8px;
+            }
+            #btn{
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width:950px){
+            .Parent_templet_one{
+                
+                font-size:7px;
+            }
+            button{
+                font-size: 5px;
+            }
+        }
+
+        @media screen and (max-width:850px){
+             
+            button{
+                font-size: 3px;
+            }
+
+             
+            .songs_templete{
+                width: 80%;
+            }
+            .right_container{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:750px){
+             
+            .songs_templete{
+                width: 80%;
+            }
+            .right_container{
+                width: 50%;
+            }
+            #right_temp_song_name{
+                font-size: 10px;
+            }
+            #song_name{
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width:700px){
+              #number{
+                font-size: 10px;
+              }
+              #heartimg{
+                font-size: 10px;
+              }
+              .Parent_templet_one{
+                
+                line-height: 10px;
+            }
+            .Parent_templet_image{
+                height: 5vh;
+                width: 5vh;
+            }
+
+        }
+
+        @media screen and (max-width:650px){
+            #number{
+                font-size: 5px;
+              }
+              #heartimg{
+                font-size: 5px;
+              }
+              .Parent_templet_one{
+                
+                line-height: 5px;
+                width: 50%;
+            }
+            #plus{
+                font-size: 5px;
+            }
+            #song_name{
+                font-size: 5px;
+            }
+            #right_temp_song_name{
+                font-size: 5px;
+            }
+            #ellipsis{
+                font-size: 5px;
+            }
+
+        }  
+ 
+
+    </style>
+
+    </head>
+    
+    <body>
+        <div class="Main_container">
+    
+            <!-- Mid container start -->
+            <div class="Mid_container">
+    
+    
+                <!-- ........start navigation.............................. -->
+                <nav class="navigation">
+                    <div>
+                        <img id="navbar_logo" src="./Images Major Project/alexander-shatov-qt7S2QuAhJI-unsplash.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <span>favorite</span>
+                    </div>
+    
+                    <div class="right_navbaar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="seach">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                    <div>
+                        <i id="bell" class="fa-solid fa-bell"></i>
+                    </div>
+                    <div>
+                        <img id="navbar_logo" src="./Images Major Project/wenhao-ryan-J-VgIkj6FaY-unsplash.jpg" alt="">
+                    </div>
+                </nav>
+                <!-- .....navigation end.................................... -->
+    
+    
+                <div class="bottom_container">
+    
+    
+                    <div class="left_container">
+                        <!-- .................left container start.......... -->
+                        <div class="Parent_templet_one">
+                            <div>
+                                <img class="Parent_templet_image"
+                                    src="./Images Major Project/wenhao-ryan-J-VgIkj6FaY-unsplash.jpg" alt="">
+                            </div>
+    
+                            <div class="Parent_templet_two">
+                                <div class="child_temp_one">
+                                    <h3 class="coding">Cold play</h3>
+                                    <div>
+                                        <span id="follower">911follower</span>
+                                    </div>
+                                </div>
+    
+                                <div class="lorem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus delectus
+                                    voluptatum nobis praesentium
+                                    tenetur tempore pariatur rerum placeat quam expedita consequatur ea ipsam culpa laborum,
+                                    doloremque voluptas
+                                    reiciendis officiis?
+                                </div>
+    
+                                <div class="button_temp">
+                                    <div>
+                                        <button class="btn">Play All</button>
+                                    </div>
+                                    <div>
+                                        <span> Follow</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <!-- ..................left container end.........  -->
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">01</span>
+                                <img class="songs_templete_image" src="./Images Major Project/Badshah.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">02</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/elizeu-dias-aZ3qiq1eTRk-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">03</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/keagan-henman-7-vsV4mqkRc-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">04</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/marius-gerome-1Ys3LiqFYeQ-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">05</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/obafemi-moyosade-zndslHAXhAw-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">06</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/obie-fernandez-uDAr4KFKY40-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">07</span>
+                                <img class="songs_templete_image"
+                                    src="./Images Major Project/richie-lugo-uSC6z5ajEVM-unsplash.jpg" alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                        <div class="songs_templete">
+                            <div>
+                                <span id="number">08</span>
+                                <img class="songs_templete_image" src="./Images Major Project/Sidhu Moose Wala - Singer.jpg"
+                                    alt="">
+                                <span id="song_name">mirage</span>
+                            </div>
+    
+                            <div>
+                                <i id="heartimg" class="fa-regular fa-heart"></i>
+                                <i id="plus" class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+    
+    
+    
+                    <!-- Right container start -->
+                    <div class="right_container">
+                        <div class="right_temp">
+                            <h3>Similar Artist</h3>
+                            <div>
+                                <span>View</span>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image" src="./Images Major Project/Arjit singh.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image" src="./Images Major Project/Badshah.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/elizeu-dias-aZ3qiq1eTRk-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/marius-gerome-1Ys3LiqFYeQ-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/obafemi-moyosade-zndslHAXhAw-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/richie-lugo-uSC6z5ajEVM-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/satyawan-narinedhat-Lk73Qk1_3Fw-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image" src="./Images Major Project/Sidhu Moose Wala - Singer.jpg"
+                                    alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i id="ellipsis" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+    
+    
+                        <div class="right_temp">
+                            <h3>Recently played</h3>
+                            <div>
+                                <span>View</span>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/wenhao-ryan-J-VgIkj6FaY-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image" src="./Images Major Project/Arjit singh.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image" src="./Images Major Project/Badshah.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/elizeu-dias-aZ3qiq1eTRk-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/keagan-henman-7-vsV4mqkRc-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/marius-gerome-1Ys3LiqFYeQ-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/obafemi-moyosade-zndslHAXhAw-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/obie-fernandez-uDAr4KFKY40-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="right_temp">
+                            <div>
+                                <img class="right_temp_image"
+                                    src="./Images Major Project/richie-lugo-uSC6z5ajEVM-unsplash.jpg" alt="">
+                                <span id="right_temp_song_name">imagine dragens</span>
+    
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- .Right container end... -->
+    
+    
+                </div>
+    
+                <div class="backword_navbaar">
+                    <div>
+                        <img class="backword_navbaar_image"
+                            src="./Images Major Project/wenhao-ryan-J-VgIkj6FaY-unsplash.jpg" alt="">
+                        <span>song</span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                    </div>
+    
+                    <div class="mid">
+                        <div class="backword_navbaar_mid_icon">
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-circle-pause"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div>
+                            <span>2:3</span><input class="range" type="range"><span>4:5</span>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <i class="fa-solid fa-volume-high"></i>
+                        <input type="range">
+                        <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Mid container end...... -->
+        </div>
+    </body>
+    
+    </html>

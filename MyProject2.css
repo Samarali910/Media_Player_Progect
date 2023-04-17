@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.Main_container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.Mid_container {
+    width: 90%;
+    height: auto;
+    
+    
+}
+
+#bell {
+    margin-left: 50px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 1px;
+    background-color: black;
+    color: white;
+}
+
+#navbar_logo {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+
+.right_navbaar {
+    background-color: blue;
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width:700px) {
+    input {
+        width: 50%;
+    }
+
+    #navbar_logo {
+        height: 5vh;
+        width: 5vh;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    #bell {
+        margin-right: 30px;
+    }
+
+    input {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .right_navbaar {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #navbar_logo {
+        height: 2vh;
+        width: 2vh;
+        border-radius: 50%;
+    }
+}
+
+
+
+/* .................start bottom container...................... */
+
+.bottom_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+     
+}
+
+.left_container {
+    width: 60%;
+    height: 100vh;
+    
+    margin-left: 15vh;
+    overflow: auto;
+}
+
+.left_container::-webkit-scrollbar{
+    width: 7px;
+}
+.left_container::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.left_temp {
+    display: flex;
+}
+
+.right_container {
+    width: 30%;
+    height: 100vh;
+    
+    margin-right: 15vh;
+    margin-left: 20px;
+    overflow: auto;
+}
+
+.right_container::-webkit-scrollbar{
+    width: 7px;
+}
+
+.right_container::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+
+/* ..............left container start............. */
+.Parent_templet_image {
+    height: 40vh;
+    width: 40vh;
+}
+
+.Parent_templet_one{
+    display: flex; 
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.child_temp_one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button_temp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 20px 0 0 20px; */
+    margin: 10px 0 0 5px;
+}
+
+.Parent_templet_two{
+    margin: 10px 0 0 10px;
+}
+
+/* ..............left container end............... */
+
+
+
+
+/* ..............songs container start............................. */
+.songs_templete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 4px 4px 4px white;
+    color: white;
+}
+.songs_templete_image{
+    height: 5vh;
+    width: 5vh;
+}
+
+
+
+
+
+
+
+
+.right_temp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.right_temp_image{
+    height: 5vh;
+    width: 5vh;
+}
+
+
+/* ..................backword navbar........... */
+.backword_navbaar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: sticky;
+    top: -1px;
+}
+.backword_navbaar_image{
+height: 5vh;
+width: 5vh;
+}
+
+.range{
+width: 40vh;
+}
+
+.backword_navbaar_mid_icon{
+margin-left: 20vh;
+}
+/* ..................backword navbaar end........... */
+#heartimg{
+    margin-right: 30px;
+}
+#song_name{
+    margin-left: 10px;
+    font-style: italic;
+}
+button{
+    padding: 2px 10px;
+    box-shadow: 1px 1px 4px 4px white;
+}
+
+/* @media screen and (max-width:1170px){
+    .lorem{
+        font-size: 10px;
+        
+     }
+     .Parent_templet_image{
+        height: 20vh;
+        width:  20vh;
+     }
+     .Parent_templet_one{
+        margin-right: 20px;
+     }
+}
+  @media screen and (max-width:1000px){
+    .Parent_templet_image{
+        height: 15vh;
+        width:  15vh;
+     }
+  }
+
+  @media screen and (max-width:951px){
+    .Parent_templet_image{
+        height: 10vh;
+        width:  10vh;
+     }
+  }
+
+
+
+@media screen and (max-width:950px){
+    .right_container{
+        width: 50%;
+    }
+    .coding{
+        font-size: 10px;
+    }
+    .follower{
+        font-size: 10px;
+    }
+    button{
+        width: 60%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width:850px){
+    #btn{
+        font-size: 10px;
+    }
+    .follower{
+        font-size: 10px;
+    }
+} */
+
+
+@media screen and (max-width:1150px) {
+    .Parent_templet_one{
+        width: 80%;
+         
+    }
+    .Parent_templet_image{
+        height: 15vh;
+        width: 15vh;
+    }
+    
+    .songs_templete{
+        width: 80%;
+    }
+    .right_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .Parent_templet_one{
+        
+        font-size:10px;
+    }
+    button{
+        font-size: 8px;
+    }
+    #btn{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .Parent_templet_one{
+        
+        font-size:7px;
+    }
+    button{
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:850px){
+     
+    button{
+        font-size: 3px;
+    }
+
+     
+    .songs_templete{
+        width: 80%;
+    }
+    .right_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:750px){
+     
+    .songs_templete{
+        width: 80%;
+    }
+    .right_container{
+        width: 50%;
+    }
+    #right_temp_song_name{
+        font-size: 10px;
+    }
+    #song_name{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:700px){
+      #number{
+        font-size: 10px;
+      }
+      #heartimg{
+        font-size: 10px;
+      }
+      .Parent_templet_one{
+        
+        line-height: 10px;
+    }
+    .Parent_templet_image{
+        height: 5vh;
+        width: 5vh;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    #number{
+        font-size: 5px;
+      }
+      #heartimg{
+        font-size: 5px;
+      }
+      .Parent_templet_one{
+        
+        line-height: 5px;
+        width: 50%;
+    }
+    #plus{
+        font-size: 5px;
+    }
+    #song_name{
+        font-size: 5px;
+    }
+    #right_temp_song_name{
+        font-size: 5px;
+    }
+    #ellipsis{
+        font-size: 5px;
+    }
+
+}
+     
